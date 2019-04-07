@@ -1,0 +1,31 @@
+.weekly-product {
+  display: flex;
+
+  .weekly-product__wrapper {
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 33px;
+  }
+
+  .weekly-product__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .weekly-product__item-title {
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+    margin: 0px;
+  }
+
+  .weekly-product__title {
+    font-size: 17px;
+    line-height: 20px;
+    color: #63d1bb;
+    margin: 0px;
+  }
+
+}
+
