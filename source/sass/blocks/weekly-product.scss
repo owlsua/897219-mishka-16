@@ -5,12 +5,13 @@
     display: flex;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 33px;
+    padding-top: 27px;
   }
 
   .weekly-product__item {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .weekly-product__item-title {
@@ -18,6 +19,7 @@
     line-height: 30px;
     color: #000000;
     margin: 0px;
+    margin-bottom: 5px;
   }
 
   .weekly-product__title {
@@ -25,6 +27,62 @@
     line-height: 20px;
     color: #63d1bb;
     margin: 0px;
+    margin-bottom: 23px;
+  }
+
+  .weekly-product__description {
+    margin: 0px;
+    color: #444444;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 17px;
+  }
+
+  .weekly-product__specifications {
+    margin: 0px;
+    color: #444444;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 28.5px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .weekly-product__field,
+  .weekly-product__value {
+    border-bottom: 1px solid #ececec;
+    padding: 0px;
+    padding-top: 9.5px;
+    padding-bottom: 9.5px;
+    height: 40px;
+  }
+
+  .weekly-product__image {
+    display: block;
+    margin-bottom: 23px;
+  }
+
+  .weekly-product__value {
+    padding-left: 17px;
+  }
+
+  .weekly-product__price {
+    width: 100%;
+    color: #444444;
+    padding-left: 68px;
+    margin: 0px;
+    margin-bottom: 27px;
+  }
+
+  .weekly-product__order-button {
+    font-size: 17px;
+    line-height: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 79px;
+    padding-right: 79px;
   }
 
 }
