@@ -7,26 +7,24 @@
 @import "blocks/catalog.scss";
 
 *,
-*:before,
-*:after {
-   -webkit-box-sizing: inherit;
-           box-sizing: inherit;
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 html {
-   -webkit-box-sizing: border-box;
-           box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 .content-box-component {
-   -webkit-box-sizing: content-box;
-           box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", Roboto, sans-serif;
+  font-family: "Open Sans", "Roboto", sans-serif;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -66,28 +64,3 @@ body {
   background-color: transparent;
   border: 2px solid #444444;
 }
-
-// ###START-HEADER###
-
-.page-header {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-}
-
-.page-main {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-
-.nav-toggle {
-  width: 21px;
-  height: 14px;
-  padding: 0px;
-  background-color: transparent;
-  border: none;
-}
-
-

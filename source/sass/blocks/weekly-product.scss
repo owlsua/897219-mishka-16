@@ -18,7 +18,7 @@
     font-size: 25px;
     line-height: 30px;
     color: #000000;
-    margin: 0px;
+    margin: 0;
     margin-bottom: 5px;
   }
 
@@ -26,12 +26,12 @@
     font-size: 17px;
     line-height: 20px;
     color: #63d1bb;
-    margin: 0px;
+    margin: 0;
     margin-bottom: 23px;
   }
 
   .weekly-product__description {
-    margin: 0px;
+    margin: 0;
     color: #444444;
     font-size: 15px;
     line-height: 24px;
@@ -40,7 +40,7 @@
   }
 
   .weekly-product__specifications {
-    margin: 0px;
+    margin: 0;
     color: #444444;
     font-size: 15px;
     line-height: 20px;
@@ -53,25 +53,20 @@
   .weekly-product__field,
   .weekly-product__value {
     border-bottom: 1px solid #ececec;
-    padding: 0px;
+    padding: 0;
     padding-top: 9.5px;
     padding-bottom: 9.5px;
     height: 40px;
   }
 
   .weekly-product__image {
-    display: block;
-    margin-bottom: 23px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 24px;
   }
 
   .weekly-product__value {
     padding-left: 17px;
-  }
-
-  .weekly-product__image {
-    display: flex;
-    margin: 0 auto;
-    margin-bottom: 24px;
   }
 
   .weekly-product__price {
@@ -88,6 +83,4 @@
     padding-left: 79px;
     padding-right: 79px;
   }
-
 }
-

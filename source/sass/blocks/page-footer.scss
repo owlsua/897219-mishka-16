@@ -27,9 +27,9 @@
   justify-content: center;
   width: 100%;
   list-style: none;
-  padding: 0px;
+  padding: 0;
   padding-right: 5px;
-  margin: 0px;
+  margin: 0;
 }
 
 .social__item {
@@ -38,7 +38,6 @@
 }
 
 .social__link {
-
   &--instagram {
     margin-right: 41px;
   }
@@ -65,10 +64,10 @@
   text-decoration: none;
   color: #000000;
 
-  &:after {
+  &::after {
     position: absolute;
     content: "";
-    background-image: url(../../img/htmlacademy.svg);
+    background-image: url("../../img/htmlacademy.svg");
     width: 55px;
     height: 41px;
     top: -8px;
@@ -78,7 +77,7 @@
 }
 
 .copyright__title {
-  margin: 0px;
+  margin: 0;
   font-size: 19px;
   line-height: 18px;
 }

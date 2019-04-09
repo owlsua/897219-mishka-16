@@ -10,7 +10,7 @@
   }
 
   .about__title {
-    margin: 0px;
+    margin: 0;
     font-size: 25px;
     line-height: 30px;
     margin-bottom: 26px;
@@ -20,8 +20,8 @@
     display: flex;
     list-style: none;
     flex-direction: column;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -32,56 +32,56 @@
   line-height: 20px;
   padding-top: 60px;
   margin-bottom: 23px;
-  margin-left: 0px;
+  margin-left: 0;
 
-  &:before {
+  &::before {
     position: absolute;
     content: "";
     background-repeat: no-repeat;
   }
 
-  &--materials:before {
-    background-image: url(../../img/icon-feature-flower.svg);
+  &--materials::before {
+    background-image: url("../../img/icon-feature-flower.svg");
     width: 32px;
     height: 37px;
     top: 6px;
     left: 9px;
   }
 
-  &--style:before {
-    background-image: url(../../img/icon-feature-money.svg);
+  &--style::before {
+    background-image: url("../../img/icon-feature-money.svg");
     width: 47px;
     height: 27px;
     top: 7px;
     left: 1px;
   }
 
-  &--like:before {
-    background-image: url(../../img/icon-feature-heart.svg);
+  &--like::before {
+    background-image: url("../../img/icon-feature-heart.svg");
     width: 34px;
     height: 28px;
     top: 12px;
     left: 8px;
   }
 
-  &--made:before {
-    background-image: url(../../img/icon-feature-ball.svg);
+  &--made::before {
+    background-image: url("../../img/icon-feature-ball.svg");
     width: 35px;
     height: 35px;
     top: 9px;
     left: 4px;
   }
 
-  &--support:before {
-    background-image: url(../../img/icon-feature-rocket.svg);
+  &--support::before {
+    background-image: url("../../img/icon-feature-rocket.svg");
     width: 55px;
     height: 23px;
     top: 10px;
     left: -5px;
   }
 
-  &--delivery:before {
-    background-image: url(../../img/icon-feature-gift.svg);
+  &--delivery::before {
+    background-image: url("../../img/icon-feature-gift.svg");
     width: 33px;
     height: 32px;
     top: 8px;
