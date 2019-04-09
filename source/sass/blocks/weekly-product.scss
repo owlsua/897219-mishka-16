@@ -68,11 +68,15 @@
     padding-left: 17px;
   }
 
+  .weekly-product__image {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+
   .weekly-product__price {
-    width: 100%;
     color: #444444;
-    padding-left: 68px;
-    margin: 0px;
+    margin: 0 auto;
     margin-bottom: 27px;
   }
 

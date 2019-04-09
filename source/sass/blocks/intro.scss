@@ -1,33 +1,44 @@
 .intro {
   width: 100%;
+}
 
-  .intro__wrapper {
-    display: flex;
-    flex-wrap: wrap;
+.intro__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-position: top center;
+  justify-content: center;
+
+  &--main {
     background-image: url(../../img/hero-mobile@1x.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    justify-content: center;
+    background-color: #f1f1f1;
   }
 
-  .intro__title {
-    width: 240px;
-    font-size: 27px;
-    font-weight: 800;
-    line-height: 30px;
-    margin: 0px;
-    padding-top: 70px;
-    padding-bottom: 122.5px;
-    text-align: center;
-    vertical-align: center;
+  &--catalog {
+    background-color: #f1f1f1;
   }
+}
 
-  .intro__catalog-link {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+.intro__title {
+  width: 240px;
+  font-size: 27px;
+  font-weight: 800;
+  line-height: 30px;
+  margin: 0px;
+  padding-top: 70px;
+  padding-bottom: 122.5px;
+  text-align: center;
+  vertical-align: center;
+
+  &--catalog {
+    padding-bottom: 76.5px;
   }
+}
 
+.intro__catalog-link {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .catalog-link__item {
