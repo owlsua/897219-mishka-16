@@ -25,13 +25,12 @@
   font-weight: 800;
   line-height: 30px;
   margin: 0;
-  padding-top: 70px;
-  padding-bottom: 122.5px;
+  padding: 70px 0 123px 0;
   text-align: center;
   vertical-align: center;
 
   &--catalog {
-    padding-bottom: 76.5px;
+    padding-bottom: 77px;
   }
 }
 
@@ -47,9 +46,7 @@
   background-color: #63d1bb;
   text-decoration: none;
   font-size: 19px;
-  padding-left: 29px;
-  padding-top: 25px;
-  padding-bottom: 30px;
+  padding: 25px 0 30px 29px;
   width: 100%;
 
   &--toys {

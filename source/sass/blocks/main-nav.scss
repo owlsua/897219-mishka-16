@@ -6,29 +6,27 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .main-nav__link {
+    color: #000000;
+    text-decoration: none;
+  }
 }
 
-.main-nav__list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
 
 .service-list__item,
 .site-list__item {
   display: flex;
   width: 100%;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-right: 30px;
-  padding-left: 74px;
+  padding: 32px 30px 32px 74px;
   border-bottom: 1px solid #ececec;
-}
-
-.main-nav__link {
-  color: #000000;
-  text-decoration: none;
 }
