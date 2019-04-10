@@ -1,10 +1,6 @@
-@import "blocks/main-nav.scss";
-@import "blocks/logo-toggle-container.scss";
-@import "blocks/intro.scss";
-@import "blocks/weekly-product.scss";
-@import "blocks/about.scss";
-@import "blocks/page-footer.scss";
-@import "blocks/catalog.scss";
+@import "blocks/*.scss";
+@import "variables.scss";
+
 
 *,
 *::before,
@@ -58,7 +54,7 @@ body {
 .button {
   font: inherit;
   text-align: center;
-  color: #444444;
+  color: $text-gray;
   vertical-align: middle;
   text-transform: uppercase;
   background-color: transparent;

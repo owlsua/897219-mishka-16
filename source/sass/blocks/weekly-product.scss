@@ -23,13 +23,13 @@
   .weekly-product__title {
     font-size: 17px;
     line-height: 20px;
-    color: #63d1bb;
+    color: $main-site-color;
     margin: 0 0 23px 0;
   }
 
   .weekly-product__description {
     margin: 0;
-    color: #444444;
+    color: $text-gray;
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
@@ -38,7 +38,7 @@
 
   .weekly-product__specifications {
     margin: 0;
-    color: #444444;
+    color: $text-gray;
     font-size: 15px;
     line-height: 20px;
     font-weight: 400;
@@ -65,7 +65,7 @@
   }
 
   .weekly-product__price {
-    color: #444444;
+    color: $text-gray;
     margin: 0 auto;
     margin-bottom: 27px;
   }
