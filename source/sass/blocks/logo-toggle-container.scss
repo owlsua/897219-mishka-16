@@ -1,0 +1,21 @@
+.logo-toggle-container {
+  display: flex;
+  width: 100%;
+  padding: 21px 30px 16px 48px;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  justify-content: center;
+
+  .page-header__logo {
+    margin: 0 auto;
+  }
+
+  .nav-toggle {
+    width: 21px;
+    height: 14px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    margin-top: 10px;
+  }
+}
