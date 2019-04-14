@@ -1,6 +1,13 @@
-@import "blocks/*.scss";
 @import "variables.scss";
-
+@import "blocks/page-header.scss";
+@import "blocks/logo-toggle-container.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/intro.scss";
+@import "blocks/page-main.scss";
+@import "blocks/weekly-product.scss";
+@import "blocks/about.scss";
+@import "blocks/catalog.scss";
+@import "blocks/page-footer.scss";
 
 *,
 *::before,
@@ -32,9 +39,7 @@ body {
 
 .page-wrapper {
   position: relative;
-  max-width: 680px;
   min-width: 320px;
-  width: 320px;
   height: 100%;
   background-color: #ffffff;
   margin: 0;
