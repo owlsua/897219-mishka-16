@@ -2,4 +2,27 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    border-bottom: 1px solid #ececec;
+    padding: 0 50px 0 50px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    min-height: 89px;
+  }
+}
+
+.page-header__delivery {
+  display: none;
+  position: absolute;
+  top: 110%;
+  right: 0;
+  padding-right: 50px;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
 }

@@ -16,16 +16,56 @@
   list-style: none;
   padding: 0;
   margin: 0 auto;
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .catalog-item {
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    display: flex;
+    margin: auto;
+    width: 100%;
+  }
+
+  @media (min-width: 1200px) {
+    width: auto;
+    flex-direction: column;
+  }
+}
+
+.catalog-item__image-wrapper {
+  display: flex;
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+
+  @media (min-width: 1200px) {
+    width: auto;
+  }
 }
 
 .catalog-item__image {
   display: flex;
   margin: 0 auto;
   margin-bottom: 26px;
+}
+
+.catalog-item__content-wrapper {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  @media (min-width: 1200px) {
+    width: auto;
+  }
 }
 
 .catalog-item__title {
