@@ -7,7 +7,7 @@
   justify-content: center;
 
   @media (min-width: 768px) {
-    padding: 0;
+    padding: 22px 0 21px 0;
     border: none;
     width: auto;
   }
@@ -17,10 +17,9 @@
 
     @media (min-width: 768px) {
       margin: 0;
-      padding: 22px 0 22px 0;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width:  1150px) {
       position: absolute;
       padding: 0;
       top: 50%;
