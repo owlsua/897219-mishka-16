@@ -17,7 +17,7 @@
   padding: 0;
   margin: 0 auto;
 
-  @media (min-width:  1150px) {
+  @media (min-width: 1150px) {
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -32,7 +32,7 @@
     width: 100%;
   }
 
-  @media (min-width:  1150px) {
+  @media (min-width: 1150px) {
     width: auto;
     flex-direction: column;
   }
@@ -45,7 +45,7 @@
     width: 50%;
   }
 
-  @media (min-width:  1150px) {
+  @media (min-width: 1150px) {
     width: auto;
   }
 }
@@ -63,7 +63,7 @@
     width: 50%;
   }
 
-  @media (min-width:  1150px) {
+  @media (min-width: 1150px) {
     width: auto;
   }
 }

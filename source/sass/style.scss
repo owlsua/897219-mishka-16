@@ -1,6 +1,6 @@
 @import "variables.scss";
 @import "blocks/page-header.scss";
-@import "blocks/logo-toggle-container.scss";
+@import "blocks/header-logo.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/intro.scss";
 @import "blocks/page-main.scss";
@@ -40,8 +40,9 @@ body {
 
 .page-wrapper {
   position: relative;
-  min-width: 320px;
-  max-width: 1150px;
+  // min-width: 320px;
+  // max-width: 1150px;
+  width: 768px;
   height: 100%;
   background-color: #ffffff;
   margin: 0 auto;

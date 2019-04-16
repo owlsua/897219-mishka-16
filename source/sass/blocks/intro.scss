@@ -32,12 +32,23 @@
   &--catalog {
     padding-bottom: 77px;
   }
+
+  @media (min-width: 768px) {
+    padding: 152px 0 374px 0;
+    font-size: 43px;
+    line-height: 50px;
+    width: 100%;
+  }
 }
 
 .intro__catalog-link {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+
+  @media (min-width: 768px) {
+    padding: 0 50px 0 50px;
+  }
 }
 
 .catalog-link__item {
