@@ -30,7 +30,7 @@ body {
   font-family: "Open Sans", "Roboto", sans-serif;
   font-size: 17px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 800;
   color: rgb(0, 0, 0);
   background-color: #ffffff;
   background-position: top center;
@@ -40,9 +40,9 @@ body {
 
 .page-wrapper {
   position: relative;
-  // min-width: 320px;
-  // max-width: 1150px;
-  width: 768px;
+  min-width: 320px;
+  max-width: 1150px;
+  // width: 768px;
   height: 100%;
   background-color: #ffffff;
   margin: 0 auto;
