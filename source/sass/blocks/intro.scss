@@ -1,5 +1,14 @@
 .intro {
   width: 100%;
+  margin: 0 0 26px 0;
+
+  &--catalog {
+    margin: 0 0 30px 0;
+  }
+
+  @media (min-width: 768px) {
+    margin: 0 0 30px 0;
+  }
 }
 
 .intro__wrapper {
@@ -30,7 +39,7 @@
   vertical-align: center;
 
   &--catalog {
-    padding-bottom: 77px;
+    padding-bottom: 76px;
   }
 
   @media (min-width: 768px) {
@@ -38,6 +47,10 @@
     font-size: 43px;
     line-height: 50px;
     width: 100%;
+
+    &--catalog {
+      padding: 94px 0 80px 0;
+    }
   }
 }
 
@@ -67,7 +80,7 @@
 
   &--toys {
     background-color: #56c3b2;
-    padding: 25px 0 31px 29px;
+    padding: 25px 0 30px 29px;
 
     @media (min-width: 768px) {
       padding: 27px 0 31px 36px;
@@ -81,7 +94,7 @@
   }
 
   &--interior {
-    padding: 24px 0 30px 28px;
+    padding: 25px 0 30px 28px;
 
     @media (min-width: 768px) {
       padding: 27px 0 31px 35px;
