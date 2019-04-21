@@ -187,6 +187,8 @@
     @media (min-width: 768px) {
       padding: 30px 0 34px 91px;
       border-left: 1px solid #ececec;
+      min-width: 265px;
+      text-align: right;
     }
   }
 
@@ -248,7 +250,7 @@
   @media (min-width: 768px) {
     position: absolute;
     top: 106px;
-    left: -87px;
+    left: -112px;
   }
 
   @media (min-width: 1150px) {

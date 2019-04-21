@@ -24,10 +24,6 @@
     display: flex;
     padding: 0 0 36px 0;
     width: 100%;
-
-    @media (min-width: 768px) {
-      padding: 45px 0 36px 0;
-    }
   }
 
   .weekly-product__item {
@@ -46,12 +42,11 @@
     @media (min-width: 768px) {
       flex-direction: row;
       justify-content: space-between;
-      margin-bottom: 45px;
+      margin-bottom: 49px;
     }
   }
 
   .weekly-product__content-wrapper {
-    position: relative;
     display: flex;
     flex-direction: column;
 
@@ -70,7 +65,7 @@
     @media (min-width: 768px) {
       font-size: 43px;
       line-height: 50px;
-      margin-left: -3px;
+      margin: 0;
     }
   }
 
@@ -142,8 +137,8 @@
 
     @media (min-width: 768px) {
       position: absolute;
-      top: 9px;
-      right: -334px;
+      top: 108px;
+      right: 1px;
     }
   }
 
@@ -163,6 +158,11 @@
     font-size: 17px;
     line-height: 20px;
     padding: 14px 79px 14px 79px;
+
+    @media (min-width: 768px) {
+      margin: 0 0 0 -2px;
+      width: 100%;
+    }
   }
 
   .weekly-product__bottom-line {
