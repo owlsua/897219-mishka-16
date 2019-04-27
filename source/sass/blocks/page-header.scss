@@ -24,6 +24,7 @@
   line-height: 24px;
   font-weight: 400;
   color: $text-gray;
+  z-index: 5;
 
   @media (min-width: 768px) {
     display: block;

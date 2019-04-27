@@ -12,7 +12,7 @@
   top: -48px;
   right: 31px;
   border: none;
-  z-index: 3;
+  z-index: 6;
 
   @media (min-width: 768px) {
     display: none;
@@ -22,7 +22,7 @@
 .main-nav--closed .main-nav__toggle::after {
   position: absolute;
   content: "";
-  background-image: url(../../img/icon-menu-open.svg);
+  background-image: url("../../img/icon-menu-open.svg");
   width: 21px;
   height: 14px;
   background-repeat: no-repeat;
@@ -34,7 +34,7 @@
 .main-nav--opened .main-nav__toggle::after {
   position: absolute;
   content: "";
-  background-image: url(../../img/icon-menu-close.svg);
+  background-image: url("../../img/icon-menu-close.svg");
   width: 21px;
   height: 21px;
   background-repeat: no-repeat;
@@ -48,6 +48,7 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  z-index: 5;
 
   @media (min-width: 768px) {
     display: flex;
