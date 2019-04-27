@@ -11,18 +11,27 @@
     display: flex;
     width: 100%;
     flex-direction: column;
+
+    @media (min-width: 1150px) {
+      padding: 0 0 0 176px;
+    }
   }
 
   .about__title {
-    margin: 0;
     font-size: 25px;
     line-height: 30px;
-    margin-bottom: 26px;
+    margin: 0 0 26px 0;
 
     @media (min-width: 768px) {
       font-size: 43px;
       line-height: 50px;
-      margin-bottom: 43px;
+      margin: 0 0 43px -3px;
+    }
+
+    @media (min-width: 1150px) {
+      font-size: 53px;
+      line-height: 57px;
+      margin: 0 0 41px -5px;
     }
   }
 
@@ -78,6 +87,10 @@
     &--delivery {
       order: 5;
     }
+  }
+
+  @media (min-width: 1150px) {
+    width: 40%;
   }
 
 
