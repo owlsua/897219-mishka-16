@@ -14,7 +14,7 @@
   border: none;
   z-index: 6;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
@@ -50,11 +50,11 @@
   width: 100%;
   z-index: 5;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 
-  @media (min-width: 1150px) {
+  @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
     justify-content: space-between;
   }
@@ -86,7 +86,7 @@
   padding: 0;
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     flex-wrap: nowrap;
   }
 }
@@ -106,13 +106,13 @@
   // ###catalig-link###
 
   &--catalog {
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
       font-size: 15px;
       line-height: 24px;
       font-weight: 800;
     }
 
-    @media (min-width: 1150px) {
+    @media (min-width: $desktop-width) {
       font-size: 17px;
       padding: 30px 43px 30px 0;
       border-right: 1px solid #ececec;
@@ -123,13 +123,13 @@
   // ###order-link###
 
   &--order {
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
       font-size: 15px;
       line-height: 24px;
       font-weight: 800;
     }
 
-    @media (min-width: 1150px) {
+    @media (min-width: $desktop-width) {
       font-size: 17px;
       padding: 30px 35px 30px 34px;
     }
@@ -149,14 +149,14 @@
       opacity: 0.3;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
       padding: 35px 40px 35px 42px;
       border-left: 1px solid #ececec;
     }
   }
 
   &--search span {
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
       display: none;
     }
   }
@@ -166,7 +166,7 @@
     top: 5px;
     left: -43px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
       top: 37px;
       left: 33px;
     }
@@ -186,14 +186,14 @@
       opacity: 0.3;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
       padding: 30px 0 34px 91px;
       border-left: 1px solid #ececec;
       min-width: 265px;
       text-align: right;
     }
 
-    @media (min-width: 1150px) {
+    @media (min-width: $desktop-width) {
       min-width: 267px;
     }
   }
@@ -203,7 +203,7 @@
     top: 3px;
     left: -45px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
       top: 34px;
       left: 32px;
     }
@@ -219,7 +219,7 @@
   padding: 27px 30px 27px 75px;
   border-bottom: 1px solid #ececec;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     padding: 0;
     width: auto;
     border: none;
@@ -227,13 +227,13 @@
 }
 
 .site-list__item {
-  @media (min-width: 768px) and (max-width: 1149px) {
+  @media (min-width: $tablet-width) and (max-width: 1149px) {
     margin-right: 42px;
   }
 }
 
 .sales-list__item {
-  @media (min-width: 1150px) {
+  @media (min-width: $desktop-width) {
     font-size: 15px;
     line-height: 24px;
     font-weight: 800;
@@ -244,11 +244,11 @@
 .main-nav__list.sales-list {
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 50%;
   }
 
-  @media (min-width: 1150px) {
+  @media (min-width: $desktop-width) {
     display: flex;
     position: absolute;
     top: 106px;
@@ -256,13 +256,13 @@
 }
 
 .main-nav__list.site-list {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     position: absolute;
     top: 106px;
     left: -112px;
   }
 
-  @media (min-width: 1150px) {
+  @media (min-width: $desktop-width) {
     position: inherit;
     top: 0;
     padding: 0;
@@ -270,7 +270,7 @@
 }
 
 .main-nav__list.service-list {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     justify-content: flex-end;
     order: 2;
     font-size: 17px;
