@@ -5,7 +5,7 @@
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .page-header {
     border-bottom: 1px solid #ececec;
     padding: 0 50px 0 50px;
@@ -18,11 +18,16 @@
 .page-header__delivery {
   display: none;
   position: absolute;
-  top: 110%;
   right: 0;
   padding-right: 50px;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $text-gray;
+  z-index: 5;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: block;
+    top: 106px;
   }
 }

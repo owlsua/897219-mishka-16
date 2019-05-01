@@ -1,7 +1,11 @@
 .catalog {
   display: flex;
   width: 100%;
-  padding: 30px 30px 0 30px;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
 }
 
 .catalog__wrapper {
@@ -17,63 +21,82 @@
   padding: 0;
   margin: 0 auto;
 
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
 
 .catalog-item {
-  margin: 0 auto;
+  margin: 0 0 30px 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: flex;
-    margin: auto;
     width: 100%;
   }
 
-  @media (min-width: 1200px) {
-    width: auto;
+  @media (min-width: $desktop-width) {
     flex-direction: column;
+    max-width: 316px;
+    min-height: 659px;
+    justify-content: space-between;
+    margin: 0 50px 30px 0;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
 }
 
 .catalog-item__image-wrapper {
   display: flex;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 50%;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop-width) {
     width: auto;
+  }
+}
+
+.catalog-item picture {
+  @media (min-width: 320px) and (max-width: 1149px) {
+    min-width: 100%;
   }
 }
 
 .catalog-item__image {
   display: flex;
   margin: 0 auto;
-  margin-bottom: 26px;
+  min-width: 100%;
 }
 
 .catalog-item__content-wrapper {
-  @media (min-width: 768px) {
+  border: 1px solid #ececec;
+  padding: 26px 27px 0 27px;
+
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     width: 50%;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop-width) {
     width: auto;
+    flex-grow: 1;
   }
 }
 
 .catalog-item__title {
   font-size: 17px;
   line-height: 24px;
-  font-weight: 700;
-  padding: 0 28px 0 28px;
-  margin: 0;
+  font-weight: 800;
+  margin: 0 0 5px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .catalog-item__specifications {
@@ -81,13 +104,28 @@
   line-height: 30px;
   color: $text-gray;
   font-weight: 400;
-  padding: 0 28px 0 28px;
-  margin: 0;
+  margin: 0 0 19px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    margin-bottom: auto;
+  }
+}
+
+.catalog-item__buy {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ececec;
+  padding: 21px 0 26px 0;
 }
 
 .catalog-item__price {
   font-size: 15px;
   line-height: 24px;
   font-weight: 700;
-  padding: 0 28px 0 28px;
+}
+
+.catalog-item__cart {
+  padding: 1px 0 0 0;
+  margin: 0 -2px 0 0;
 }
