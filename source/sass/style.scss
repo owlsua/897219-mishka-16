@@ -59,11 +59,23 @@ body {
 }
 
 .button {
-  font: inherit;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 800;
   text-align: center;
   color: $text-gray;
   vertical-align: middle;
   text-transform: uppercase;
   background-color: transparent;
   border: 2px solid #444444;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #444444;
+  }
 }
