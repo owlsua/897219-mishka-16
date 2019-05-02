@@ -59,7 +59,9 @@ body {
 }
 
 .button {
-  font: inherit;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 800;
   text-align: center;
   color: $text-gray;
   vertical-align: middle;
