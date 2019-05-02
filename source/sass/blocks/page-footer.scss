@@ -59,6 +59,16 @@
 }
 
 .social__link {
+
+  &:hover path {
+    fill: $main-site-color;
+  }
+
+  &:active path {
+    fill: $main-site-color;
+    opacity: 0.3;
+  }
+
   &--instagram {
     margin-right: 41px;
   }
@@ -87,6 +97,10 @@
   justify-content: center;
   text-decoration: none;
   color: #000000;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   & svg {
     margin-top: -8px;
