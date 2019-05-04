@@ -23,6 +23,14 @@
 .page-footer__logo {
   display: none;
 
+  &:hover path {
+    fill: $main-site-color;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     display: block;
     width: 33.33%;
@@ -59,11 +67,11 @@
 }
 
 .social__link {
-  &:hover path {
+  &:hover svg {
     fill: $main-site-color;
   }
 
-  &:active path {
+  &:active svg {
     fill: $main-site-color;
     opacity: 0.3;
   }
