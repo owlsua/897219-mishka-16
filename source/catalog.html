@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700i&amp;subset=cyrillic" rel="stylesheet">
@@ -17,7 +18,7 @@
       <header class="page-header">
 
         <div class="header-logo">
-          <a class="page-header__logo-link">
+          <a class="page-header__logo-link" href="index.html">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -93,19 +94,21 @@
             <ul class="catalog__items-list">
               <li class="catalog-item catalog-item--1">
                 <div class="catalog-item__image-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp, img/photo-hare-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp, img/photo-hare-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
+                  <a class="catalog-item__image-link" href="#">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp, img/photo-hare-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp, img/photo-hare-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
 
-                    <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg, img/photo-hare-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg, img/photo-hare-tablet@2x.jpg 2x">
-                    <img class="catalog-item__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Фото товара">
-                  </picture>
+                      <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg, img/photo-hare-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg, img/photo-hare-tablet@2x.jpg 2x">
+                      <img class="catalog-item__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Фото товара">
+                    </picture>
+                  </a>
                 </div>
 
                 <div class="catalog-item__content-wrapper">
-                  <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
+                  <a class="catalog-item__title" href="#">Зайчик-попрыгайчик</a>
                   <p class="catalog-item__specifications">Рост 30 см, вес 200 г</p>
                   <div class="catalog-item__buy">
                     <span class="catalog-item__price">1200 руб.</span>
@@ -121,19 +124,21 @@
 
               <li class="catalog-item catalog-item--2">
                 <div class="catalog-item__image-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp, photo-bowl-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp, img/photo-bowl-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
+                  <a class="catalog-item__image-link" href="#">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp, photo-bowl-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp, img/photo-bowl-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
 
-                    <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg, photo-bowl-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg, img/photo-bowl-tablet@2x.jpg 2x">
-                    <img class="catalog-item__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Фото товара">
-                  </picture>
+                      <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg, photo-bowl-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg, img/photo-bowl-tablet@2x.jpg 2x">
+                      <img class="catalog-item__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Фото товара">
+                    </picture>
+                  </a>
                 </div>
 
                 <div class="catalog-item__content-wrapper">
-                  <h3 class="catalog-item__title">Корзина для белья</h3>
+                  <a class="catalog-item__title" href="#">Корзина для белья</a>
                   <p class="catalog-item__specifications">Диаметр 15 см, высота 10 см</p>
                   <div class="catalog-item__buy">
                     <span class="catalog-item__price">690 руб.</span>
@@ -149,19 +154,21 @@
 
               <li class="catalog-item catalog-item--3">
                 <div class="catalog-item__image-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp, photo-toys-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg, photo-toys-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
+                  <a class="catalog-item__image-link" href="#">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp, photo-toys-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg, photo-toys-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
 
-                    <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg, photo-toys-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg, photo-toys-tablet@2x.jpg 2x">
-                    <img class="catalog-item__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Фото товара">
-                  </picture>
+                      <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg, photo-toys-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg, photo-toys-tablet@2x.jpg 2x">
+                      <img class="catalog-item__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Фото товара">
+                    </picture>
+                  </a>
                 </div>
 
                 <div class="catalog-item__content-wrapper">
-                  <h3 class="catalog-item__title">Большая корзинка для игрушек</h3>
+                  <a class="catalog-item__title" href="#">Большая корзинка для игрушек</a>
                   <p class="catalog-item__specifications">Диаметр 30 см, высота 30 см</p>
                   <div class="catalog-item__buy">
                     <span class="catalog-item__price">1500 руб.</span>
