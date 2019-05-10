@@ -151,41 +151,51 @@
           <div class="review__wrapper">
             <div class="review__content">
               <h2 class="review__title">Отзывы</h2>
-              <p class="review_text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <h3 class="review__autor-name">Анастасия Красильникова</h3>
               <span class="review__autor-nickname">@misssssiskras</span>
             </div>
             <div class="review__navigation">
               <div class="review__nav-wrapper">
-                <button class="review__nav-button review__nav-button--back">Назад</button>
-                <button class="review__nav-button review__nav-button--forward">Вперед</button>
+                <button class="review__nav-button review__nav-button--back" value="Назад">
+                  <svg width="50" height="26" viewBox="0 0 50 26">
+                    <use xlink:href="#icon-left-arrow"></use>
+                  </svg>
+                </button>
+                <button class="review__nav-button review__nav-button--forward" value="Вперед">
+                  <svg width="50" height="26" viewBox="0 0 50 26">
+                    <use xlink:href="#icon-right-arrow"></use>
+                  </svg>
+                </button>
               </div>
-              <button class="review__button">Написать</button>
+              <a class="button review__button" href="#">Написать</a>
             </div>
           </div>
         </section>
 
         <section class="contacts-map">
           <div class="contacts-map__wrapper">
+            <h2 class="contacts-map__title">Контакты</h2>
             <div class="contact-map__contacts">
-              <table class="weekly-product__specifications">
+              <table class="contact-map__contacts-content">
                 <tr>
-                  <td class="weekly-product__field">e-mail:</td>
-                  <td class="weekly-product__value">info@mimimishkashop.ru</td>
+                  <td class="contact-map__field">e-mail:</td>
+                  <td class="contact-map__value">info@mimimishkashop.ru</td>
                 </tr>
                 <tr>
-                  <td class="weekly-product__field">адрес:</td>
-                  <td class="weekly-product__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+                  <td class="contact-map__field">адрес:</td>
+                  <td class="contact-map__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
                 </tr>
               </table>
             </div>
             <div class="contact-map__maps">
-
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A88bbcaace1fdeba40ec1850a35012e37e1de5473cdb1a471e0e15ee83c1594b1&amp;source=constructor" width="320" height="457" frameborder="0"></iframe>
             </div>
-            <a class="button contact-map__button" href="#">Напишите нам</a>
+            <div class="contact-map__button-wrapper">
+              <a class="button contact-map__button" href="#">Напишите нам</a>
+            </div>
           </div>
         </section>
-
       </main>
 
 

@@ -8,6 +8,8 @@
 @import "blocks/about.scss";
 @import "blocks/catalog.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/review.scss";
+@import "blocks/contacts-map.scss";
 
 *,
 *::before,
@@ -78,4 +80,8 @@ body {
     color: rgba(255, 255, 255, 0.3);
     background-color: #444444;
   }
+}
+
+a {
+  text-decoration: none;
 }
