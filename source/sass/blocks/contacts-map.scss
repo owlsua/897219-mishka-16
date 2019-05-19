@@ -1,7 +1,7 @@
 .contacts-map {
   position: relative;
   display: flex;
-  margin: 0 0 30px 0;
+  margin: 0 0 39px 0;
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -36,6 +36,7 @@
 .contacts-map__title {
   font-size: 18px;
   line-height: 30px;
+  margin: 0 0 25px -2px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
@@ -47,7 +48,7 @@
 .contact-map__title-contacts {
   width: 100%;
   padding: 0 30px 0 30px;
-  margin: 0 0 43px 0;
+  margin: 0 0 37px 0;
 
   @media (min-width: $desktop-width) {
     width: 50%;
@@ -61,8 +62,10 @@
   line-height: 30px;
   font-weight: 400;
   color: #444444;
+  margin: 0 0 0 -2px;
 
   & tr {
+    margin: 0 0 20px 0;
     @media (min-width: $tablet-width) {
       width: 50%;
     }
@@ -81,10 +84,18 @@
 
 .contact-map__field {
   vertical-align: top;
+
+  &--addres {
+    padding: 29px 0 0 0;
+  }
 }
 
 .contact-map__value {
-  padding: 0 0 0 32px;
+  padding: 0 0 0 29px;
+
+  &--addres {
+    padding: 29px 0 0 29px;
+  }
 }
 
 .contact-map__maps {
@@ -95,6 +106,15 @@
   @media (min-width: $desktop-width) {
     width: 50%;
   }
+}
+
+.contact-map__email {
+  border-bottom: 1px solid $main-site-color;
+  padding: 0 0 4px 0;
+}
+
+.contact-map__addres {
+  padding-right: 25px;
 }
 
 .contact-map__maps iframe {
@@ -111,7 +131,8 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  padding: 15px 0 15px 0;
+  align-items: center;
+  min-height: 52px;
   font-size: 18px;
 
   @media (min-width: $tablet-width) {
