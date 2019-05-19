@@ -11,6 +11,7 @@
 @import "blocks/review.scss";
 @import "blocks/contacts-map.scss";
 @import "blocks/production.scss";
+@import "blocks/order.scss";
 
 *,
 *::before,
@@ -45,6 +46,7 @@ body {
   position: relative;
   min-width: 320px;
   max-width: 1150px;
+  // width: 768px;
   height: 100%;
   background-color: #ffffff;
   margin: 0 auto;

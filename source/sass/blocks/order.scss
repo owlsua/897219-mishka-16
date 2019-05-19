@@ -1,0 +1,148 @@
+.order {
+  padding: 0 30px 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px 0 50px;
+  }
+}
+
+.order__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.order__description {
+  font-size: 13px;
+  line-height: 24px;
+  color: $text-gray;
+  font-weight: 400;
+}
+
+.order-form__item-title {
+  position: relative;
+  font-size: 17px;
+  line-height: 16px;
+  color: $main-site-color;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: auto;
+    height: 1px;
+    background-color: $main-site-color;
+    top: 49%;
+    left: 62px;
+    right: 0;
+  }
+}
+
+.order-form__type,
+.order-form__color,
+.order-form__passport-data,
+.order-form__contacts,
+.order-form__additional {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-form__filter-chekbox {
+   display: flex;
+   position: relative;
+   padding-left: 40px;
+   margin-bottom: 30px;
+   width: 40px;
+   height: 39px;
+   border: 2px solid $text-gray;
+
+   &:hover {
+    border: 2px solid $main-site-color;
+   }
+
+   &:active {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+   }
+}
+
+.order-form__filter-chekbox input[type="checkbox"]:checked + .order-form__checkbox-indicator {
+  position: absolute;
+  content: "";
+  background-image: url(../img/icon-tick.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 39px;
+  left: 5px;
+  top: 5px;
+}
+
+.order-form__checkbox-label {
+  padding: 5px 0 0 10px;
+}
+
+.order-form__radio-label {
+  display: flex;
+  white-space: nowrap;
+  padding: 0 0 0 23px;
+  align-items: center;
+}
+
+.order-form__filter-radio {
+  display: flex;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 30px;
+  width: 52px;
+  height: 52px;
+  border: 2px solid $text-gray;
+  border-radius: 50px;
+
+  &:hover {
+   border: 2px solid $main-site-color;
+  }
+
+  &:active {
+   border: 2px solid rgba(68, 68, 68, 0.3);
+  }
+}
+
+.order-form__filter-radio input[type="radio"]:checked + .order-form__radio-indicator {
+  position: absolute;
+  content: "";
+  border: 11px solid $main-site-color;
+  border-radius: 50px;
+  left: 13px;
+  top: 13px;
+}
+
+.order-form__name,
+.order-form__email,
+.order-form__tel {
+  width: 100%;
+  height: 55px;
+  border: none;
+  border-bottom: 2px solid $text-gray;
+}
+
+.order-form__passport-title {
+  margin: 0;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.order-form__require-note {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $text-gray;
+}
+
+.order-form__additional-wishes {
+  width: 100%;
+  height: 142px;
+  border: 2px solid $text-gray;
+}
+
+.order-form__button {
+  width: 100%;
+  min-height: 52px;
+}
+

@@ -88,83 +88,91 @@
         <section class="order">
           <h2 class="visually-hidden">Фильтр формы заказа</h2>
           <div class="order__wrapper">
-            <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+            <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
             <form class="order__order-form" action="https://echo.htmlacademy.ru" method="post">
 
               <div class="order-form__type">
                 <h3 class="order-form__item-title">Тип</h3>
-                <label>
-                  <input type="radio" name="type" value="for-interior" required>
-                  Аксессуар для интерьера
+                <label class="order-form__filter-radio">
+                  <input type="radio" name="type" value="for-interior" class="visually-hidden" required>
+                  <span class="order-form__radio-indicator"></span>
+                  <span class="order-form__radio-label">Аксессуар для<br> интерьера</span>
                 </label>
-                <label>
-                  <input type="radio" name="type" value="kid-toys" required>
-                  Детская игрушка
+                <label class="order-form__filter-radio">
+                  <input type="radio" name="type" value="kid-toys" class="visually-hidden" required>
+                  <span class="order-form__radio-indicator"></span>
+                  <span class="order-form__radio-label">Детская игрушка</span>
                 </label>
               </div>
 
               <div class="order-form__color">
                 <h3 class="order-form__item-title">Цвет</h3>
-                <label class="filter-chekbox">
+                <label class="order-form__filter-chekbox">
                   <input type="checkbox" name="white" class="visually-hidden" checked>
                   <span class="order-form__checkbox-indicator"></span>
-                  Белый
+                  <span class="order-form__checkbox-label">Белый</span>
                 </label>
 
-                <label class="filter-chekbox">
+                <label class="order-form__filter-chekbox">
                   <input type="checkbox" name="gray" class="visually-hidden" checked>
                   <span class="order-form__checkbox-indicator"></span>
-                  Серый
+                  <span class="order-form__checkbox-label">Серый</span>
                 </label>
 
-                <label class="filter-chekbox">
+                <label class="order-form__filter-chekbox">
                   <input type="checkbox" name="tiffani" class="visually-hidden">
                   <span class="order-form__checkbox-indicator"></span>
-                  «Тиффани»
+                  <span class="order-form__checkbox-label">«Тиффани»</span>
                 </label>
 
-                <label class="filter-chekbox">
+                <label class="order-form__filter-chekbox">
                   <input type="checkbox" name="black" class="visually-hidden">
                   <span class="order-form__checkbox-indicator"></span>
-                  Черный
+                  <span class="order-form__checkbox-label">Черный</span>
                 </label>
 
-                <label class="filter-chekbox">
+                <label class="order-form__filter-chekbox">
                   <input type="checkbox" name="pink" class="visually-hidden">
                   <span class="order-form__checkbox-indicator"></span>
-                  Розовый
+                  <span class="order-form__checkbox-label">Розовый</span>
                 </label>
 
-                <label class="filter-chekbox">
+                <label class="order-form__filter-chekbox">
                   <input type="checkbox" name="orange" class="visually-hidden">
                   <span class="order-form__checkbox-indicator"></span>
-                  Оранжевый
+                  <span class="order-form__checkbox-label">Оранжевый</span>
                 </label>
               </div>
 
               <div class="order-form__passport-data">
                 <h3 class="order-form__item-title">ФИО</h3>
-                <label>Имя <input class="order-form__name order-form__name--first-name" type="text" required></label>
-                <label>Фамилия <input class="order-form__name order-form__name--last-name" type="text" required></label>
-                <label>Отчество <input class="order-form__name order-form__name--patronymic" type="text"></label>
+                <label>
+                  <h4 class="order-form__passport-title">Имя</h4>
+                  <input class="order-form__name order-form__name--first-name" type="text" placeholder="Введите ваше имя*" required></label>
+                <label>
+                  <h4 class="order-form__passport-title">Фамилия</h4>
+                  <input class="order-form__name order-form__name--last-name" type="text" placeholder="Укажите фамилию*" required></label>
+                <label>
+                  <h4 class="order-form__passport-title">Отчество</h4>
+                  <input class="order-form__name order-form__name--patronymic" type="text" placeholder="Отчество, если желаете"></label>
               </div>
 
               <div class="order-form__contacts">
                 <h3 class="visually-hidden">Телефон и эмейл</h3>
-                <label>ТЕЛ <input class="order-form__tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required></label>
-                <label>E-MAIL <input class="order-form__email" type="email" placeholder="Ваш Email*" required></label>
+                <label><h3 class="order-form__item-title">ТЕЛ</h3><input class="order-form__tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required></label>
+                <label><h3 class="order-form__item-title">E-MAIL</h3><input class="order-form__email" type="email" placeholder="Ваш Email*" required></label>
               </div>
 
               <div class="order-form__additional">
                 <label>
-                  ДОП
+                  <h3 class="order-form__item-title">ДОП</h3>
                   <textarea class="order-form__additional-wishes">Опишите все ваши пожелания к заказу</textarea>
                 </label>
               </div>
 
               <div class="order-form__button-wrapper">
                 <input class="button order-form__button" type="submit" value="Отправить заказ">
-                <p>*Поля обязательны для заполнения</p>
+                <p class="order-form__require-note">*Поля обязательны для заполнения</p>
               </div>
             </form>
           </div>

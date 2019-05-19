@@ -27,10 +27,29 @@
       left: 50px;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px 60px 50px;
+  }
+}
+
+.review__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .review__content {
   margin: 0 0 34px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
 }
 
 .review__title {
@@ -45,7 +64,7 @@
   font-weight: 400;
 }
 
-.eview__autor-name {
+.review__autor-name {
   font-size: 17px;
   line-height: 24px;
 }
@@ -60,11 +79,23 @@
 .review__navigation {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    width: 175px;
+    height: 100%;
+  }
 }
 
 .review__nav-wrapper {
   display: flex;
   margin: 0 0 38px 0;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
 
 .review__nav-button {
@@ -73,6 +104,10 @@
   background: transparent;
   border: 1px solid #ececec;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 
   &--forward {
     border-left: none;
@@ -90,4 +125,9 @@
 .review__button {
   padding: 17px 0 18px 0;
   font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-bottom: auto;
+  }
 }

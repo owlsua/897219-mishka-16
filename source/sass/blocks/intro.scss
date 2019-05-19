@@ -39,6 +39,10 @@
       margin: 0 0 127px 0;
     }
   }
+
+  &--form {
+    margin: 0 0 27px 0;
+  }
 }
 
 .intro__wrapper {
@@ -76,7 +80,8 @@
     }
   }
 
-  &--catalog {
+  &--catalog,
+  &--form {
     background-color: $background-gray;
   }
 }
