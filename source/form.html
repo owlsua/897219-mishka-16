@@ -92,23 +92,23 @@
             <form class="order__order-form" action="https://echo.htmlacademy.ru" method="post">
 
               <div class="order-form__type">
-                <h3 class="order-form__item-title">Тип</h3>
+                <h3 class="order-form__item-title order-form__item-title--type">Тип</h3>
                 <div class="order-form__type-radio-wrapper">
                   <label class="order-form__filter-radio order-form__filter-radio--type">
-                    <input type="radio" name="type" value="for-interior" class="visually-hidden" required>
+                    <input type="radio" name="type" value="for-interior" class="visually-hidden" required checked>
                     <span class="order-form__radio-indicator"></span>
-                    <span class="order-form__radio-label">Аксессуар для<br> интерьера</span>
+                    <span class="order-form__radio-label order-form__radio-label--interior">Аксессуар для интерьера</span>
                   </label>
                   <label class="order-form__filter-radio order-form__filter-radio--type">
                     <input type="radio" name="type" value="kid-toys" class="visually-hidden" required>
                     <span class="order-form__radio-indicator"></span>
-                    <span class="order-form__radio-label">Детская игрушка</span>
+                    <span class="order-form__radio-label order-form__radio-label--toys">Детская игрушка</span>
                   </label>
                 </div>
               </div>
 
               <div class="order-form__color">
-                <h3 class="order-form__item-title">Цвет</h3>
+                <h3 class="order-form__item-title order-form__item-title--color">Цвет</h3>
 
                 <div class="order-form__color-checkbox-wrapper">
                   <div class="order-form__color-item-wrapper">
@@ -162,18 +162,18 @@
               </div>
 
               <div class="order-form__passport-data">
-                <h3 class="order-form__item-title">ФИО</h3>
+                <h3 class="order-form__item-title order-form__item-title--passport">ФИО</h3>
                 <div class="order-form__passport-data-wrapper">
                   <label>
-                    <h4 class="order-form__passport-title">Имя</h4>
+                    <h4 class="order-form__passport-title">Имя:</h4>
                     <input class="order-form__name order-form__name--first-name" type="text" placeholder="Введите ваше имя*" required>
                   </label>
                   <label>
-                    <h4 class="order-form__passport-title">Фамилия</h4>
+                    <h4 class="order-form__passport-title">Фамилия:</h4>
                     <input class="order-form__name order-form__name--last-name" type="text" placeholder="Укажите фамилию*" required>
                   </label>
                   <label>
-                    <h4 class="order-form__passport-title">Отчество</h4>
+                    <h4 class="order-form__passport-title">Отчество:</h4>
                     <input class="order-form__name order-form__name--patronymic" type="text" placeholder="Отчество, если желаете">
                   </label>
                 </div>
@@ -181,19 +181,25 @@
 
               <div class="order-form__contacts">
                 <h3 class="visually-hidden">Телефон и эмейл</h3>
-                <label>
-                  <h3 class="order-form__item-title">ТЕЛ</h3>
+                <label class="order-form__label order-form__label--tel">
+                  <h3 class="order-form__item-title order-form__item-title--tel">ТЕЛ</h3>
                   <input class="order-form__tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                  <svg width="25" height="24" viewBox="0 0 25 24">
+                    <use xlink:href="#icon-phone"></use>
+                  </svg>
                 </label>
-                <label>
-                  <h3 class="order-form__item-title">E-MAIL</h3>
+                <label class="order-form__label order-form__label--email">
+                  <h3 class="order-form__item-title order-form__item-title--email">E-MAIL</h3>
                   <input class="order-form__email" type="email" placeholder="Ваш Email*" required>
+                  <svg width="32" height="21" viewBox="0 0 32 21">
+                    <use xlink:href="#icon-mail"></use>
+                  </svg>
                 </label>
               </div>
 
               <div class="order-form__additional">
                 <label>
-                  <h3 class="order-form__item-title">ДОП</h3>
+                  <h3 class="order-form__item-title order-form__item-title--additional">ДОП</h3>
                   <textarea class="order-form__additional-wishes">Опишите все ваши пожелания к заказу</textarea>
                 </label>
               </div>
@@ -265,5 +271,6 @@
       </footer>
     </div>
     <script src="js/script.js"></script>
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>
