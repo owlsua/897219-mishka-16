@@ -12,6 +12,7 @@
 @import "blocks/contacts-map.scss";
 @import "blocks/production.scss";
 @import "blocks/order.scss";
+@import "blocks/index-modal.scss";
 
 *,
 *::before,
@@ -77,6 +78,7 @@ body {
   &:hover {
     color: #ffffff;
     background-color: #444444;
+    transition: all 0.5s;
   }
 
   &:active {

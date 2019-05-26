@@ -254,6 +254,32 @@
           </div>
         </div>
       </footer>
+
+      <section class="index-modal">
+        <h1 class="index-modal__title">Добавить в корзину</h1>
+        <p class="index-modal__description">Выберите размер:</p>
+        <form class="index-modal__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="index-modal__radio-wrapper">
+            <label class="index-modal__filter-radio index-modal__filter-radio--size-s">
+              <input type="radio" name="type" value="size-s" class="visually-hidden" required checked>
+              <span class="index-modal__radio-indicator"></span>
+              <span class="index-modal__radio-label index-modal__radio-label--size-s">S</span>
+            </label>
+            <label class="index-modal__filter-radio index-modal__filter-radio--size-m">
+              <input type="radio" name="type" value="size-m" class="visually-hidden" required>
+              <span class="index-modal__radio-indicator"></span>
+              <span class="index-modal__radio-label index-modal__radio-label--size-s">M</span>
+            </label>
+            <label class="index-modal__filter-radio index-modal__filter-radio--size-l">
+              <input type="radio" name="type" value="size-l" class="visually-hidden" required>
+              <span class="index-modal__radio-indicator"></span>
+              <span class="index-modal__radio-label index-modal__radio-label--size-l">L</span>
+            </label>
+          </div>
+          <input class="button index-modal__button" type="submit" value="Заказать">
+        </form>
+      </section>
+
     </div>
     <script src="js/script.js"></script>
     <script src="js/picturefill.min.js"></script>
