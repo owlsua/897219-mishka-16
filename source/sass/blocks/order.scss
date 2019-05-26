@@ -126,9 +126,14 @@
   &:active {
     color: $text-gray;
   }
+
+  &:focus-within {
+    border-bottom: 2px solid #62d1ba;
+    color: $text-gray;
+  }
 }
 
-// ###start-order-form__type###
+// ###START-ORDER-FORM-TYPE###
 .order-form__type {
   margin: 0 0 11px 0;
 
@@ -155,6 +160,12 @@
 
   &--interior {
     padding: 15px 0 0 0;
+
+    & br {
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
 
     @media (min-width: $tablet-width) {
       margin: -4px 0 0 79px;
@@ -195,10 +206,6 @@
   &:active {
     border: 2px solid rgba(68, 68, 68, 0.3);
   }
-
-  &:checked {
-    border: 2px solid red;
-  }
 }
 
 .order-form__filter-radio input[type="radio"]:checked + .order-form__radio-indicator {
@@ -218,9 +225,9 @@
     top: 13px;
   }
 }
-// ###end-order-form__type###
+// ###END-OERDER-FORM-TYPE###
 
-// ###start-order-form__color###
+// ###START-ORDER-FORM-COLOR###
 .order-form__color {
   margin: 0 0 11px 0;
   font-size: 17px;
@@ -310,9 +317,9 @@
     margin: 13px 0 0 79px;
   }
 }
-// ###end-order-form__color###
+// ###END-ORDER-FORM-COLOR###
 
-// ###start-order-form__passport-data###
+// ###START-ORDER-FORM-PASSPORT_DATA###
 .order-form__passport-data {
   margin: 0 0 13px 0;
 
@@ -364,9 +371,9 @@
     padding: 0 0 3px 18px;
   }
 }
-// ###end-order-form__passport-data###
+// ###END-ORDER-FORM-PASSPORT_DATA###
 
-// ###start-order-form__contacts###
+// ###START-ORDER-FORM-CONTACTS###
 .order-form__contacts {
   @media (min-width: $tablet-width) {
     background-color: #f1f1f1;
@@ -386,6 +393,10 @@
 
   &:hover,
   &:active {
+    fill: #62d1ba;
+  }
+
+  &:focus-within {
     fill: #62d1ba;
   }
 }
@@ -458,9 +469,9 @@
     margin: 0 0 18px 0;
   }
 }
-// ###end-order-form__contacts###
+// ###END-ORDER-FORM-CONTACTS###
 
-// ###start-order-form__additional###
+// ###START-ORDER-FORM-ADDITIONAL###
 .order-form__additional {
   margin: 0 0 14px 0;
 
@@ -489,6 +500,7 @@
   font-size: 17px;
   line-height: 18px;
   color: #cacaca;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     width: auto;
@@ -504,10 +516,15 @@
     border: 2px solid rgba(68, 68, 68, 0.3);
     color: $text-gray;
   }
-}
-// ###end-order-form__additional###
 
-// ###start-order-form__button-wrapper###
+  &:focus-within {
+    border-bottom: 2px solid #62d1ba;
+    color: $text-gray;
+  }
+}
+// ###END-ORDER-FORM-ADDITIONAL###
+
+// ###START-ORDER-FORM-BUTTON-WRAPPER###
 .order-form__button-wrapper {
   margin: 0 0 55px 0;
 
@@ -546,4 +563,4 @@
     min-width: 230px;
   }
 }
-// ###end-order-form__button-wrapper###
+// ###END-ORDER-FORM-BUTTON-WRAPPER###

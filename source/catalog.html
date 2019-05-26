@@ -112,7 +112,7 @@
                   <p class="catalog-item__specifications">Рост 30 см, вес 200 г</p>
                   <div class="catalog-item__buy">
                     <span class="catalog-item__price">1200 руб.</span>
-                    <a class="catalog-item__cart" href="#">
+                    <a class="catalog-item__cart order-button" href="#">
                       <span class="visually-hidden">Добовить в корзину</span>
                       <svg class="service-list__cart-icon" width="21" height="18" viewBox="0 0 21 18">
                         <use xlink:href="#icon-cart"></use>
@@ -142,7 +142,7 @@
                   <p class="catalog-item__specifications">Диаметр 15 см, высота 10 см</p>
                   <div class="catalog-item__buy">
                     <span class="catalog-item__price">690 руб.</span>
-                    <a class="catalog-item__cart" href="#">
+                    <a class="catalog-item__cart order-button" href="#">
                       <span class="visually-hidden">Добовить в корзину</span>
                       <svg class="service-list__cart-icon" width="21" height="18" viewBox="0 0 21 18">
                         <use xlink:href="#icon-cart"></use>
@@ -172,7 +172,7 @@
                   <p class="catalog-item__specifications">Диаметр 30 см, высота 30 см</p>
                   <div class="catalog-item__buy">
                     <span class="catalog-item__price">1500 руб.</span>
-                    <a class="catalog-item__cart" href="#">
+                    <a class="catalog-item__cart order-button" href="#">
                       <span class="visually-hidden">Добовить в корзину</span>
                       <svg class="service-list__cart-icon" width="21" height="18" viewBox="0 0 21 18">
                         <use xlink:href="#icon-cart"></use>
@@ -267,8 +267,34 @@
           </div>
         </div>
       </footer>
+      <section class="order-modal">
+        <h1 class="order-modal__title">Добавить в корзину</h1>
+        <p class="order-modal__description">Выберите размер:</p>
+        <form class="order-modal__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="order-modal__radio-wrapper">
+            <label class="order-modal__filter-radio order-modal__filter-radio--size-s">
+              <input type="radio" name="type" value="size-s" class="visually-hidden" required checked>
+              <span class="order-modal__radio-indicator"></span>
+              <span class="order-modal__radio-label order-modal__radio-label--size-s">S</span>
+            </label>
+            <label class="order-modal__filter-radio order-modal__filter-radio--size-m">
+              <input type="radio" name="type" value="size-m" class="visually-hidden" required>
+              <span class="order-modal__radio-indicator"></span>
+              <span class="order-modal__radio-label order-modal__radio-label--size-s">M</span>
+            </label>
+            <label class="order-modal__filter-radio order-modal__filter-radio--size-l">
+              <input type="radio" name="type" value="size-l" class="visually-hidden" required>
+              <span class="order-modal__radio-indicator"></span>
+              <span class="order-modal__radio-label order-modal__radio-label--size-l">L</span>
+            </label>
+          </div>
+          <input class="button order-modal__button" type="submit" value="Заказать">
+        </form>
+      </section>
+      <div class="modal-background"></div>
     </div>
-    <script src="js/script.js"></script>
     <script src="js/picturefill.min.js"></script>
+    <script src="js/focus-withinfill.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

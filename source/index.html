@@ -126,7 +126,7 @@
                     <img class="weekly-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Фото товара">
                   </picture>
                   <span class="weekly-product__price">Цена: 990 руб.</span>
-                  <button class="button weekly-product__order-button" type="button">Заказать</button>
+                  <a class="button weekly-product__order-button order-button" href="#">Заказать</a>
                 </div>
 
               </div>
@@ -255,33 +255,34 @@
         </div>
       </footer>
 
-      <section class="index-modal">
-        <h1 class="index-modal__title">Добавить в корзину</h1>
-        <p class="index-modal__description">Выберите размер:</p>
-        <form class="index-modal__form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="index-modal__radio-wrapper">
-            <label class="index-modal__filter-radio index-modal__filter-radio--size-s">
+      <section class="order-modal">
+        <h1 class="order-modal__title">Добавить в корзину</h1>
+        <p class="order-modal__description">Выберите размер:</p>
+        <form class="order-modal__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="order-modal__radio-wrapper">
+            <label class="order-modal__filter-radio order-modal__filter-radio--size-s">
               <input type="radio" name="type" value="size-s" class="visually-hidden" required checked>
-              <span class="index-modal__radio-indicator"></span>
-              <span class="index-modal__radio-label index-modal__radio-label--size-s">S</span>
+              <span class="order-modal__radio-indicator"></span>
+              <span class="order-modal__radio-label order-modal__radio-label--size-s">S</span>
             </label>
-            <label class="index-modal__filter-radio index-modal__filter-radio--size-m">
+            <label class="order-modal__filter-radio order-modal__filter-radio--size-m">
               <input type="radio" name="type" value="size-m" class="visually-hidden" required>
-              <span class="index-modal__radio-indicator"></span>
-              <span class="index-modal__radio-label index-modal__radio-label--size-s">M</span>
+              <span class="order-modal__radio-indicator"></span>
+              <span class="order-modal__radio-label order-modal__radio-label--size-s">M</span>
             </label>
-            <label class="index-modal__filter-radio index-modal__filter-radio--size-l">
+            <label class="order-modal__filter-radio order-modal__filter-radio--size-l">
               <input type="radio" name="type" value="size-l" class="visually-hidden" required>
-              <span class="index-modal__radio-indicator"></span>
-              <span class="index-modal__radio-label index-modal__radio-label--size-l">L</span>
+              <span class="order-modal__radio-indicator"></span>
+              <span class="order-modal__radio-label order-modal__radio-label--size-l">L</span>
             </label>
           </div>
-          <input class="button index-modal__button" type="submit" value="Заказать">
+          <input class="button order-modal__button" type="submit" value="Заказать">
         </form>
       </section>
-
+      <div class="modal-background"></div>
     </div>
-    <script src="js/script.js"></script>
     <script src="js/picturefill.min.js"></script>
+    <script src="js/focus-withinfill.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

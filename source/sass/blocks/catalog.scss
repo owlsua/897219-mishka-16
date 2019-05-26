@@ -75,6 +75,10 @@
   }
 }
 
+.catalog-item:hover .catalog-item__content-wrapper {
+  box-shadow: 0 6px 10px 0 #ececec;
+}
+
 .catalog-item__image-link {
   width: 100%;
 }
