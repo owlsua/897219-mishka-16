@@ -1,4 +1,7 @@
-focusWithin.polyfill(".focus-within")
+
+if(focusWithin) {
+  focusWithin.polyfill(".focus-within");
+}
 
 // ###MAIN-MENU-OPEN-CLOSE###
 

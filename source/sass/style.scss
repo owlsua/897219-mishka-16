@@ -14,6 +14,27 @@
 @import "blocks/order.scss";
 @import "blocks/index-modal.scss";
 
+
+@font-face {
+  font-family:"Open Sans";
+  font-style:normal;
+  font-weight:400;
+  src:local("Open Sans"),
+  local("OpenSans"),
+  url(../fonts/opensans.woff2) format("woff2"),
+  url(../fonts/opensans.woff) format("woff");
+}
+
+@font-face {
+  font-family:"Open Sans Bold";
+  font-style:normal;
+  font-weight:700;
+  src:local("Open Sans Bold"),
+  local("OpenSans-Bold"),
+  url(../fonts/opensansbold.woff2) format("woff2"),
+  url(../fonts/opensansbold.woff) format("woff")
+}
+
 *,
 *::before,
 *::after {
@@ -27,7 +48,6 @@ html {
 .content-box-component {
   box-sizing: content-box;
 }
-
 
 body {
   margin: 0 auto;
@@ -47,7 +67,7 @@ body {
   position: relative;
   min-width: 320px;
   max-width: 1150px;
-  // width: 768px;
+  // width: 320px;
   height: 100%;
   background-color: #ffffff;
   margin: 0 auto;

@@ -12,6 +12,11 @@
   flex-direction: column;
 }
 
+.order__wrapper input,
+.order__wrapper textarea {
+  outline: none;
+}
+
 .order__description {
   font-size: 13px;
   line-height: 24px;
@@ -127,6 +132,11 @@
     color: $text-gray;
   }
 
+  &.focus-within {
+    border-bottom: 2px solid #62d1ba;
+    color: $text-gray;
+  }
+
   &:focus-within {
     border-bottom: 2px solid #62d1ba;
     color: $text-gray;
@@ -216,11 +226,11 @@
   border-radius: 50px;
   left: 10px;
   top: 10px;
+  background-color: $main-site-color;
 
   @media (min-width: $tablet-width) {
     width: 21px;
     height: 21px;
-    background-color: $main-site-color;
     left: 13px;
     top: 13px;
   }
@@ -396,6 +406,10 @@
     fill: #62d1ba;
   }
 
+  &.focus-within {
+    fill: #62d1ba;
+  }
+
   &:focus-within {
     fill: #62d1ba;
   }
@@ -517,8 +531,13 @@
     color: $text-gray;
   }
 
+  &.focus-within {
+    border: 2px solid #62d1ba;
+    color: $text-gray;
+  }
+
   &:focus-within {
-    border-bottom: 2px solid #62d1ba;
+    border: 2px solid #62d1ba;
     color: $text-gray;
   }
 }
