@@ -209,6 +209,7 @@
 
 .contact-map__maps iframe {
   width: 100%;
+  border: none;
 }
 
 .contact-map__button-wrapper {
@@ -240,8 +241,4 @@
     bottom: 56px;
     left: 225px;
   }
-}
-
-.contact-map__maps iframe {
-  border: none;
 }
