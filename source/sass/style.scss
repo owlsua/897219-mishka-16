@@ -19,6 +19,7 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
+  font-display: auto;
   src: local("Open Sans"),
     local("OpenSans"),
     url("../fonts/opensans.woff2") format("woff2"),
@@ -29,6 +30,7 @@
   font-family: "Open Sans Bold";
   font-style: normal;
   font-weight: 700;
+  font-display: auto;
   src: local("Open Sans Bold"),
     local("OpenSans-Bold"),
     url("../fonts/opensansbold.woff2") format("woff2"),
