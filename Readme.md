@@ -1,4 +1,6 @@
-# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+🚀🚀 Github pages - https://owlsua.github.io/897219-mishka-16/
+
+# Личный проект «Мишка» [![Build status][travis-image]][travis-url]
 
 * Студент: [Alexander Romashko](https://up.htmlacademy.ru/adaptive/16/user/897219).
 * Наставник: [Андрей Фидельман](https://htmlacademy.ru/profile/id773165).
