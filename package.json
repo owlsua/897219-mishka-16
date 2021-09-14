@@ -47,6 +47,7 @@
     "node": "8.15"
   },
   "dependencies": {
+    "postcss-scss": "^2.1.1",
     "sass": "^1.40.1"
   }
 }
